@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="encuesta">
+        <!-- Ingreso usuario -->
+        <form id="form" class="form">
+            <h1>Muchas gracias por ingresar a esta encuesta!</h1>
+            <h2>Por favor ayuda a MIGROS a mejorar respondiendo las siguientes preguntas.</h2>
+            <h4>Para poder responder la encuesta debes ingresar un nombre de usuario.</h4>
+            <label for="userInput">Ingresa aquí tu nombre de usuario:</label>
+            <input type="text" id="userInput" class="userInput">
+            <input id="btn-submit" type="submit" value="REGISTRARSE" class="btn"><br><br>
+        </form>
+
+        <button id="btn_empezar" class="btn">COMENZAR ENCUESTA</button>
+        <button id="btn_prev-answers" class="btn">VER RESPUESTAS ANTERIORES</button>
+        
+        <!-- Preguntas -->
+        <div id="div-questions" class="question-screen"></div>
+
+        <!-- End screen -->
+        <div id="end-screen" class="end-screen">
+            <h2>Muchas gracias por responder la encuesta :)</h2>
+            <h4>Si gustas puedes volver a la página de inicio para ver las respuestas anteriores de "otros" usuarios o volver a hacer la encuesta</h4>
+            <button id="btn-volver" class="btn">VOLVER A INICIO</button>
+        </div>
+
+        <!-- Respuestas previas -->
+        <div id="respuestas-previas" class="respuestas-previas">
+            <button id="btn-volver2" class="btn">VOLVER A INICIO</button>
+        </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+
+</body>
+</html>
